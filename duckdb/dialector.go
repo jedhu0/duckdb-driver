@@ -164,9 +164,9 @@ func (d Dialector) DataTypeOf(field *schema.Field) string {
 			// 	t = uIntPrefix + t
 			// }
 
-			if field.AutoIncrement {
-				t += " AUTOINCREMENT"
-			}
+			// if field.AutoIncrement {
+			// 	t += " AUTOINCREMENT"
+			// }
 
 			return t
 		}
