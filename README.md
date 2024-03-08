@@ -3,7 +3,7 @@ A DuckDB driver for [gorm.io](https://gorm.io/).
 ## Quickstart
 ```go
 import (
-    "github.com/c0deltin/duckdb-driver"
+    "github.com/jedhu0/duckdb-driver"
     "gorm.io/gorm"
 )
 

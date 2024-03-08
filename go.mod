@@ -1,9 +1,9 @@
-module github.com/c0deltin/duckdb-driver
+module github.com/jedhu0/duckdb-driver
 
 go 1.18
 
 require (
-	github.com/marcboeker/go-duckdb v1.0.5
+	github.com/marcboeker/go-duckdb v1.6.1
 	gorm.io/gorm v1.24.0
 )
 
