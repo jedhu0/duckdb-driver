@@ -159,13 +159,13 @@ func (d Dialector) DataTypeOf(field *schema.Field) string {
 			}
 			return t
 		default:
-			t := "bigint"
-			if field.DataType == schema.Uint {
-				t = uIntPrefix + t
-			}
+			t := "integer"
+			// if field.DataType == schema.Uint {
+			// 	t = uIntPrefix + t
+			// }
 
-			if field.PrimaryKey {
-				t += " PRIMARY KEY AUTOINCREMENT"
+			if field.AutoIncrement {
+				t += " AUTOINCREMENT"
 			}
 
 			return t
