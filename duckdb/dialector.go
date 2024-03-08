@@ -163,6 +163,11 @@ func (d Dialector) DataTypeOf(field *schema.Field) string {
 			if field.DataType == schema.Uint {
 				t = uIntPrefix + t
 			}
+
+			if field.PrimaryKey {
+				t += " PRIMARY KEY AUTOINCREMENT"
+			}
+
 			return t
 		}
 	case schema.Float:
